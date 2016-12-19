@@ -1,4 +1,14 @@
-<div ng-controller="testCtrl">
-    <list-manager items="items"></list-manager>
-</div>
-
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+    <head >
+        <meta charset="UTF-8">
+        <title>TestAngular</title>
+        <script src="js/libs/angular/angular.min.js"></script>
+    </head>
+    <body ng-controller="TestController">
+        <span>{{1+2}}</span>
+        <span>{{myVar}}</span>
+        <span ng-bind="myVar2"></span>
+        <script src="js/main.js"></script>
+    </body>
+</html>
