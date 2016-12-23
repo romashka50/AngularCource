@@ -5,14 +5,10 @@
         <title>TestAngular</title>
         <script src="js/libs/angular/angular.min.js"></script>
     </head>
-    <body ng-controller="TestController as myCtrl">
-        <span>{{1+2}}</span>
-        <span>{{myCtrl.myVar}}</span>
-        <span>{{myCtrl.myVar2}}</span>
-        <div ng-controller="Ctrl2">
-            <h1>{{myCtrl.myVar2}}</h1>
-            <input type="text" ng-model="myCtrl.myVar2">
-        </div>
+    <body>
+        <my-custom-tag>
+
+        </my-custom-tag>
         <script src="js/main.js"></script>
     </body>
 </html>
