@@ -1,4 +1,5 @@
-var AppConfig = AppConfig || {
-        mainApp   : 'myApp',
-        userModule: 'myApp.users'
+var AppConfig = {
+        mainApp      : 'myApp',
+        userModule   : 'myApp.users',
+        commentModule: 'myApp.comments'
     };

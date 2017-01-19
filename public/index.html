@@ -9,15 +9,23 @@
 
 </head>
 <body>
-    <div ng-controller="UserCtrl as userCtrl">
-        <p>{{userCtrl.currentUser.firstName}}</p>
-        <p>{{userCtrl.currentUser.lastName}}</p>
+    <div ng-controller="UserCtrl">
+        <p>{{user.firstName}}</p>
+        <p>{{user.lastName}}</p>
+        <input type="text" ng-model="user.firstName">
     </div>
+    <div ng-controller="UserCtrl">
+        <p>{{user.firstName}}</p>
+        <p>{{user.lastName}}</p>
+        <p ng-repeat="comment in comments">{{comment}}</p>
+    </div>
+
     <script src="js/app.js"></script>
 
     <script src="js/controllers/user.js"></script>
 
     <script src="js/services/user.js"></script>
+    <script src="js/services/comment.js"></script>
 
 </body>
 </html>
